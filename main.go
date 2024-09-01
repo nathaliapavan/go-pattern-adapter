@@ -7,7 +7,8 @@ import (
 )
 
 func main() {
-	var cacheService cache.Cache = cache.NewRedisAdapter()
+	// var cacheService cache.Cache = cache.NewRedisAdapter()
+	var cacheService cache.Cache = cache.NewMemcachedAdapter()
 
 	cacheKey := "myKey"
 	err := cacheService.Set(cacheKey, "myValue")
