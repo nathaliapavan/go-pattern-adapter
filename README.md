@@ -1,8 +1,8 @@
-# go-live-reload-docker
+# go-pattern-adapter
 
-## Live reload para aplicação Go com Docker (CompileDaemon)
+## Padrão adapter em Go
 
-Este repositório oferece um exemplo prático de como implementar o live reload em uma aplicação Go usando Docker. Com o Docker, a configuração do ambiente de desenvolvimento é simplificada e o live reload permite que desenvolvedores observem instantaneamente as alterações feitas no código, sem a necessidade de reiniciar o servidor manualmente.
+Este repositório oferece um exemplo prático de como implementar o padrão adapter para ferramentas de cache, utilizando a linguagem Go
 
 ## Pré-requisitos
 
@@ -21,8 +21,13 @@ Para executar este projeto, siga estas etapas:
 Clone o repo:
 
 ```bash
-git clone https://github.com/seu-usuario/go-live-reload-docker.git
-cd go-live-reload-docker
+git clone https://github.com/YOUR_USERNAME/go-pattern-adapter.git
+cd go-pattern-adapter
+```
+
+Instale as dependencias do projeto executando:
+```bash
+got mod tidy
 ```
 
 Construa a imagem Docker:
@@ -36,9 +41,3 @@ Inicie o contêiner Docker:
 ```bash
 docker-compose up -d
 ```
-
-## Onde Acessar
-
-Depois de iniciar o contêiner Docker, você pode validar a aplicação em seu navegador acessando:
-
-http://localhost:8080
